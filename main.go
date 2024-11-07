@@ -13,7 +13,7 @@ func main() {
 		return
 	}
 
-	n, err := strconv.ParseInt(os.Args[1], 10, 0)
+	n, err := strconv.ParseFloat(os.Args[1], 0)
 	if err != nil {
 		fmt.Printf("Error: '%s' is not a valid integer.\n", os.Args[1])
 		return
@@ -23,8 +23,4 @@ func main() {
 		fmt.Println("Error: Please enter a positive integer.")
 		return
 	}
-
-	var sum = (n * (n + 1)) / 2
-
-	fmt.Printf("The sum of the first %d natural numbers is: %d\n", n, sum)
 }
