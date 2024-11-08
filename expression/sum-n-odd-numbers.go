@@ -1,12 +1,12 @@
 package expression
 
 import (
+	"closed-form-expressions/math"
 	"fmt"
-	"math"
 )
 
-func SumOddNumbers(n int) string {
-	var sum = math.Pow(float64(n), 2)
+func SumOddNumbers(n int64) string {
+	var sum = math.Square(n)
 
 	return fmt.Sprintf("The sum of the first %d odd numbers is: %d\n", n, int(sum))
 }

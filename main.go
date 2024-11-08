@@ -13,7 +13,7 @@ func main() {
 		return
 	}
 
-	n, err := strconv.ParseFloat(os.Args[1], 0)
+	n, err := strconv.ParseInt(os.Args[1], 10, 0)
 	if err != nil {
 		fmt.Printf("Error: '%s' is not a valid integer.\n", os.Args[1])
 		return
